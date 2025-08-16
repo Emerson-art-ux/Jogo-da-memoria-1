@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogo da Memória - Animais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Tela de Login -->
+  <div id="login-screen">
+    <img src="img/1.png" alt="logo do jogo" class="logo">
+    <h1>Jogo da Memória</h1>
+    <input type="text" id="player-name" placeholder="Digite seu nome">
+    <button id="start-game">Entrar no jogo</button>
+  </div>
+
+  <!-- Tela do Jogo -->
+  <div id="game-screen" style="display: none;">
+    <h2>Jogador: <span id="player-display"></span></h2>
+
+    <div id="status">
+      <div id="timer">Tempo: 0s</div>
+      <div id="congrats" style="display: none;"></div>
+    </div>
+
+    <div id="game-board" class="grid"></div>
+
+    <div id="game-controls">
+      <button id="restart-game">Reiniciar</button>
+      <button id="exit-game">Sair</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  
+    <footer>
+        <p>&copy;2025 — Criado por Emerson Gabreil Martins</p>
+    </footer>
+</html>
